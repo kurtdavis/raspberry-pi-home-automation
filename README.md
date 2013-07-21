@@ -12,6 +12,18 @@ To get started, clone the repository and install the required dependencies.
     cd raspberry-pi-home-automation
     npm install
 
+  If you have issues with installing due to nodejs version too low in Raspian Wheezy, try these steps:
+  (pulled from here: [Matt's Blog](http://blog.rueedlinger.ch/2013/03/raspberry-pi-and-nodejs-basic-setup/))
+
+    sudo mkdir /opt/node
+    wget http://nodejs.org/dist/v0.10.2/node-v0.10.2-linux-arm-pi.tar.gz
+    tar xvzf node-v0.10.2-linux-arm-pi.tar.gz
+    sudo cp -r node-v0.10.2-linux-arm-pi/* /opt/node
+
+    sudo ln -s /opt/node/bin/node /usr/local/bin/node
+    sudo ln -s /opt/node/bin/npm /usr/local/bin/npm
+
+
 Hardware
 ========
 The Raspberr Pi needs a little bit of circuitry to protect and amplify its GPIO
