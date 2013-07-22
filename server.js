@@ -1,4 +1,4 @@
-var mqtt = require('mqttjs');
+var mqtt = require('mqtt');
 var readline = require('readline');
 var port = 1883;
 

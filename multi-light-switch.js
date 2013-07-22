@@ -1,4 +1,4 @@
-var mqtt = require('mqttjs'),
+var mqtt = require('mqtt'),
     Gpio = require('onoff').Gpio,
     button = new Gpio(14, 'in', 'both'),
     led1 = new Gpio(23, 'out'),
